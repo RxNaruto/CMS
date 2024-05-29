@@ -15,7 +15,7 @@ export const NewStudents=()=>{
     return <div className="bg-slate-300 h-screen flex justify-center">
         <div className="flex flex-col justify-center">
             
-            <div className="bg-lightningblue rounded-xl w-96 p-4 px-4 h-max text-center">
+            <div className="bg-blue-400 rounded-xl w-96 p-4 px-4 h-max text-center">
             <Heading label={"Signup"}/>
             <SubHeading label={"Enter the details to create account"} />
             <InputBox onChange={(e)=>{

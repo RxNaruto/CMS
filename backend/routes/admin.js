@@ -27,4 +27,18 @@ router.post("/astud",async (req,res)=>{
     }
 })
 
+router.get("/allstudents" , async(req,res)=>{
+    const data = await Students.find();
+    if(data){
+        res.status(200).json({
+            data: data
+        })
+    }
+    else{
+        res.status(500).json({
+            msg: "internal server error"
+        })
+    }
+})
+
 module.exports=router;
